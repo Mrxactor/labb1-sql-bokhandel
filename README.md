@@ -15,7 +15,7 @@ Databasen innehåller följande tabeller:
 - **Kunder** – kundinformation (förnamn, efternamn, e-post).
 - **Ordrar** – kundens beställningar med orderdatum.
 
-Alla relationer skapas med **foreign keys**, och databasen använder **INT** för datum samt **NVARCHAR(255)** för alla textfält.
+
 
 ##  Testdata
 
@@ -28,17 +28,11 @@ Databasen innehåller:
 - 4 kunder
 - 4 ordrar
 
-Testdatan används för att demonstrera funktionalitet och för att kunna testa stored procedures och SELECT-satser.
 
 ##  Stored Procedure: FlyttaBok
 
 Projektet innehåller en stored procedure för att flytta böcker mellan butiker:
 
-Proceduren:
-- Kontrollerar att från-butiken har tillräckligt antal
-- Flyttar antal exemplar mellan butiker
-- Använder **transaktioner** för att skydda dataintegritet
-- Gör ROLLBACK om något går fel
 
 ##  Syfte
 
